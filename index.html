@@ -11,13 +11,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->
 </head>
 
 <body>
+    
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
         <div class="container">
-            <a class="navbar-brand" href="#">Menu</a>
+            <!-- <img src="images/JL.png" class= "logoPage" alt=""> -->
+            <a class="navbar-brand" href="#">
+                <img src="images/JL.png" class= "logoPage" alt="">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,14 +35,26 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#services">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cv">Resume</a>
+                    </li>
+                    <p>
+                        <a class = "text" href="images/francais.pdf">
+                            <img class ="flagbar" src = "images/fr.png" alt="francais">CV-Français
+                        </a>
+                        <a class = "text" href="images/English.pdf">
+                            <img class ="flagbar" src = "images/an.png" alt="anglais">CV-Anglais
+                        </a>
+                    </p>
+                    
                 </ul>
                 
             </div>
@@ -49,60 +66,132 @@
             <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
                 <h2 class="hero_title">Jacques LIU</h2>
-                <p class="hero_desc">Étudiant ingénieur en informatique à Polytech Paris-Saclay.
-
-                    Recherche un stage de mai à août 2022.</p>
+                <p class="hero_desc">French Computer Science student at Polytech Paris-Saclay
+                    Looking for an internship from May to August, 2022.</p>
             </div>
             </div>
         </div>
     </section>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- about section-->
     <section id="about">
         <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
+            <br>
+            <br>
+            <br>
+            <h1 class="text-center">About</h1>
+            
             <div class="row mt-4">
                 <div class="col-lg-4">
+                    <div class = "imageRond"></div>
                     <img src="images/Jacques.png" class= "imageAboutPage" alt="">
                 </div>
 
                 <div class="col-lg-8">
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-                        
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
-
-                            </ul>
-                        </div>
+                    <p> Hi! I'm a 22-year-old software developer by the name of Jacques LIU. I enjoy combining programming with math and science, and I'm always seeking for fresh challenges. I developed simulations, AI, websites, games, and other things. (See the website's project section). </p>
+                    <br>
+                    <br>
+                    <p>In order to study more about math, physics, and software development, I enrolled in the French engineering program at Polytech Paris-Saclay in 2021. My major is IT. I'm in my final year of college right now. I learned a lot about theoretical ideas and new technology, but I also applied what I learned in a number of projects (see the projects section of the website).</p>
+                    <br>
+                    <br>
+                    <p>On top of all that, I've been working on other projects in my life, like doing business with my parents to help them with their business.</p>
+                </div>
+            </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="skills_section">
+        <div class="content learning">
+            <!-- <span class="section_title">What are my Skills?</span> -->
+            <div class="skills_content">
+                
+                <div class="box">
+                    <div class ="menu">
+                        <div class="selector" style="height: calc(14.2857%); top: 0%;"></div>
+                        <div class="category" style="cursor:default;">Software development</div>
+                        <div class="category" style="cursor:pointer;">Computer Graphics</div>
+                        <div class="category" style="cursor:pointer;">Front-end Web</div>
+                        <div class="category" style="cursor:pointer;">Back-end Web</div>
+                        <div class="category" style="cursor:pointer;">Design</div>
+                        <div class="category" style="cursor:pointer;">Machine Learning</div>
+                        <div class="category" style="cursor:pointer;">Blockchain</div>
                     </div>
-                    <div class="row mt-3">
-                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
+
+                    <div class="box_content">
+                        <div class="skills_list" style="display: grid;">
+                            <a class="skill" href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
+                                <img src="resources/svgs/skills/C.svg" alt="c" width="190px" height="190px">
+                                <span>C</span>
+                            </a>
+                            <a class="skill" href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">
+                                <img src="resources/svgs/skills/Cpp.svg" alt="c++" width="190px" height="190px">
+                                <span>C++</span>
+                            </a>
+                            <a class="skill" href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">
+                                <img src="resources/svgs/skills/Java.svg" alt="java" width="190px" height="190px">
+                                <span>Java</span>
+                            </a>
+                            <a class="skill" href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">
+                                <img src="resources/svgs/skills/C_sharp.svg" alt="c#" width="190px" height="190px">
+                                <span>C#</span>
+                            </a>
+                            <a class="skill" href="https://www.python.org/" target="_blank">
+                                <img src="resources/svgs/skills/Python.svg" alt="python" width="190px" height="190px">
+                                <span>Python</span>
+                            </a>
+                            <a class="skill" href="https://ocaml.org/index.html" target="_blank">
+                                <img src="resources/svgs/skills/OCaml.svg" alt="ocaml" width="190px" height="190px">
+                                <span>OCaml</span>
+                            </a>
+                            <a class="skill" href="https://www.khronos.org/opencl/" target="_blank">
+                                <img src="resources/svgs/skills/OpenCL.svg" alt="opencl" width="190px" height="190px">
+                                <span>OpenCL</span>
+                            </a>
+                            <a class="skill" href="https://cmake.org/" target="_blank">
+                                <img src="resources/svgs/skills/CMake.svg" alt="cmake" width="190px" height="190px">
+                                <span>CMake</span>
+                            </a>
+                            <a class="skill" href="https://git-scm.com/" target="_blank">
+                                <img src="resources/svgs/skills/Git.svg" alt="git" width="190px" height="190px">
+                                <span>Git</span>
+                            </a>
+                            <a class="skill" href="https://en.wikipedia.org/wiki/Unix" target="_blank">
+                                <img src="resources/svgs/skills/Unix.svg" alt="unix" width="190px" height="190px">
+                                <span>Unix</span>
+                            </a>
+                        </div>
+
+
+                        <div class="skills_list" style="display: none;">
+                            <a class="skill" href="https://www.opengl.org//" target="_blank">
+                                <img src="resources/svgs/skills/OpenGL.svg" alt="opengl" width="190px" height="190px">
+                                <span>OpenGL</span>
+                            </a>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- services section-->
     <section id="services">
         <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
             <h1 class="text-center">Services</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
+                    <a href="pages/mooncraft.html">
                     <div class="card servicesText">
                         <div class="card-body">
                             <i class="fas servicesIcon fa-clock"></i>
@@ -111,7 +200,8 @@
                                 Some quick example text to build on the card title and make up the bulk of the card's content.
                             </p>
                         </div>
-                    </div>  
+                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 mt-4">
                     <div class="card servicesText">
@@ -181,7 +271,11 @@
     <!-- portfolio section-->
     <section id="portfolio">
         <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="text-center">Projects</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
@@ -268,6 +362,10 @@
     <!-- contact section-->
     <section id="contact">
         <div class="container mt-3 contactContent">
+            <br>
+            <br>
+            <br>
+            <br>
             <h1 class="text-center">Contact Me</h1>
 
             <div class="row mt-4">
@@ -301,6 +399,28 @@
             </div>
         </div>
     </section>
+
+    <section id="cv">
+        <div class = "resume">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Resume</h2>
+            <p>Download my resume in pdf.</p>
+            <p>
+                <a class = "text" href="images/francais.pdf">
+                    <img class ="flag" src = "images/fr.png" alt="francais">
+                    Français
+                </a>
+                <br>
+                <a class = "text" href="images/English.pdf">
+                    <img class ="flag" src = "images/an.png" alt="anglais">
+                    Anglais
+                </a>
+            </p>
+        </div>
+    </section>
     <!-- footer section-->
     <footer id="footer">
         <div class="container-fluid">
@@ -317,6 +437,7 @@
 
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
+    <script src="js/skills.js"></script>
 
 </body>
 

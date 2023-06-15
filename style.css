@@ -1,6 +1,8 @@
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
-    background-color: black;
+    padding: 0.005%;
+    background-color: rgb(0, 0, 0);
+    
 }
 .container{
     font-family: "fira-code", monospace;
@@ -8,7 +10,22 @@
 .html{
     font-size: 1.2rem;
 }
+.navbar-collapse {
+    text-align: right   ;
+}
 
+.logoPage {
+    margin: 0;
+    width: 15%;
+}
+.flagbar{
+    align-items: end;
+    width: 4%;
+    height: 4%;
+}
+.navbar-nav {
+    align-items: end;
+}
 
 /* hero background image */
 .bgimage {
@@ -89,4 +106,586 @@
     margin: 0;
     padding: 2rem;
     font-family: fira-code,monospace
+} */
+.resume {
+    text-align: center;
+}
+.flag{
+    width: 2%;
+    height: 2%;
+}
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+
+/* skills */
+body {
+    --light_blue: #56dcfc;
+    --blue: #197dff;
+    --fade_light_blue: rgba(86, 220, 252, 0.15);
+    --light_gray: #8ea9bf;
+    --white: #f6f9fc;
+    --fade_white: rgb(191, 182, 216);
+    --dark_blue: #101d30;
+    --fade_dark_blue: rgba(16, 29, 48, 0.9);
+    --black_title: #2b3954;
+    --black_text: #425466;
+    --dark_purple: rgb(41, 41, 85);
+    --purple: rgb(52, 52, 102);
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vrai skills */
+#skills_section {
+    background-color: var(--white);
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#skills_section
+{
+	background-color: var(--white);
+}
+
+.skills_end
+{
+	background-color: var(--white);
+}
+
+#skills_section .section_title
+{
+	color: var(--black_title);
+}
+
+#skills_section .skills_content
+{
+	display: flex;
+	width: 100%;
+}
+
+#skills_section .box
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	filter: drop-shadow(0px 0px 10px rgba(28, 28, 51, 0.15));
+}
+
+#skills_section .box .menu
+{
+	height: 100%;
+	max-height: 575px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#skills_section .box .menu .selector
+{
+	z-index: 2;
+	width: 320px;
+	transition: 0.2s;
+	position: absolute;
+	margin-right: -40px;
+	border-radius: 20px 0 0 20px;
+	background-color: white;
+}
+
+
+#skills_section .box .menu .category
+{
+	width: 280px;
+	z-index: 3;
+	border-radius: 20px;
+	white-space: nowrap;
+	padding: 30px 40px 30px 0px;
+	margin-right: -40px;
+	font-family: proxima_nova_semi_bold;
+	font-size: 16px;
+	color: var(--blue);
+	text-align: center;
+	cursor: pointer;
+}
+
+#skills_section .box .box_content
+{
+	width: 100%;
+	min-height: 475px;
+	border-radius: 20px;
+	background-color: white;
+	padding: 50px 60px 50px 60px;
+}
+
+@-webkit-keyframes enter_anim { from { transform: translateY(25px); opacity: 0; } to { transform: translateY(0px); opacity: 1; } }
+
+@keyframes enter_anim { from { transform: translateY(25px); opacity: 0; } to { transform: translateY(0px); opacity: 1; } }
+
+#skills_section .box .box_content .skills_list
+{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 100px);
+	justify-content: space-between;
+	flex-wrap: wrap;
+	grid-gap: 50px;
+	opacity: 0;
+	transform: translateY(25px);
+	-webkit-animation: enter_anim 0.5s ease 1 forwards;
+	animation: enter_anim 0.5s ease 1 forwards;
+}
+
+#skills_section .box .box_content .skills_list .skill
+{
+	height: 125px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100px;
+	text-decoration: none;
+}
+
+#skills_section .box .box_content .skills_list .skill img
+{
+	width: 95px;
+	height: 95px;
+	transform: scale(0.88);
+	transition: transform 0.3s ease-in-out;
+}
+
+#skills_section .box .box_content .skills_list .skill:hover img
+{
+	transform: scale(1);
+}
+
+#skills_section .box .box_content .skills_list .skill span
+{
+	font-family: proxima_nova_semi_bold;
+	font-size: 16px;
+	color: var(--black_text);
+	text-align: center;
+}
+
+#skills_section .box .category_title
+{
+	white-space: nowrap;
+	margin: 0px 0px -50px 0px;
+	font-family: proxima_nova_semi_bold;
+	font-size: 22px;
+	color: var(--blue);
+	margin-bottom: -40px;
+}
+
+@media screen and (max-width: 930px)
+{
+	#skills_section .box
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 70px;
+		min-height: 0px;
+	}
+
+	#skills_section .box .box_content
+	{
+		min-height: 0px;
+		width: calc(100% - 100px);
+		padding: 50px 50px 50px 50px;
+		min-width: 230px;
+	}
+
+	#skills_section .box .box_content .skills_list
+	{
+		grid-gap: 25px;
+	}
+
+	@media screen and (max-width: 565px)
+	{
+		#skills_section .box .box_content .skills_list
+		{
+			justify-content: space-around;
+		}
+	}
+
+	@media screen and (max-width: 500px)
+	{
+		#skills_section .box .box_content .skills_list
+		{
+			justify-content: space-between;
+		}
+
+		#skills_section .box .box_content
+		{
+			width: calc(100% - 50px);
+			padding: 40px 25px 40px 25px;
+		}
+	}
+
+	@media screen and (max-width: 465px)
+	{
+		#skills_section .box .box_content .skills_list
+		{
+			justify-content: space-around;
+		}
+	}
+}
+
+
+
+/* vrai style */
+*
+/* {
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	background-color: black;
+}
+
+body
+{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+	background-color: black;
+}
+
+ol
+{
+	list-style: none;
+}
+
+#loading_screen
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #0b1b2e;
+	z-index: 10002;
+}
+
+#safari_warning
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: calc(100% - 100px);
+	background-color: #e72e2e;
+	z-index: 10001;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 18px 50px 18px 50px;
+}
+
+#safari_warning p
+{
+	font-family: proxima_nova_semi_bold;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	line-height: 22px;
+}
+
+#lcp
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 10000;
+	display: flex;
+}
+
+#lcp p
+{
+	font-family: proxima_nova_semi_bold;
+	font-size: 16px;
+	color: black;
+	opacity: 0.01;
+}
+
+#main
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.section
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	z-index: 10;
+	flex-direction: column;
+	padding: 0px 200px;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.content.leaning
+{
+	margin-top: calc(clamp(100px, 7vw, 140px) + 3.3vw);
+	margin-bottom: calc(clamp(100px, 7vw, 140px) - 3.3vw);
+}
+
+@media screen and (max-width: 1400px) { .content { padding: 0px 150px; } }
+@media screen and (max-width: 1150px) { .content { padding: 0px 100px; } }
+@media screen and (max-width: 1020px) { .content { padding: 0px 50px; } }
+@media screen and (max-width: 500px) { .content { padding: 0px 25px; } }
+
+.section_end
+{
+	height: 8vw;
+	width: 100%;
+	margin: -4vw 0px -4vw 0px;
+	transform: rotate(-4deg) scale(1.2, 1);
+}
+
+.link
+{
+	display: inline-block;
+	position: relative;
+	color: var(--light_blue);
+	text-decoration: none;
+}
+
+.link:hover
+{
+	color: var(--light_blue);
+}
+
+.link::before
+{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	top: 75%;
+	left: 0;
+	background-color: var(--light_blue);
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.link:hover::before
+{
+	transform: scaleX(0.999);
+}
+
+.button
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: all;
+	border: 2px solid var(--light_blue);
+	padding: 15px 35px 15px 40px;
+	border-radius: 40px;
+	font-family: raleway_semi_bold;
+	font-size: 16px;
+	color: var(--light_blue);
+	text-decoration: none;
+	background-color: none;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover
+{
+	background-color: var(--fade_light_blue);
+}
+
+.button .button_arrow
+{
+	height: 13px;
+	margin-left: 15px;
+	fill: none;
+	stroke: var(--light_blue);
+	stroke-width: 3px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.button .button_arrow .path_1, .button .button_arrow .path_2
+{
+	transition: all 0.3s ease;
+}
+
+.button:hover .button_arrow .path_1
+{
+	d: path("M8.85 1.5 L8.85 15.89");
+	d: "M8.85 1.5 L8.85 15.89";
+}
+
+.button:hover .button_arrow .path_2
+{
+	d: path("M16.19 8.54 8.85 15.89 1.5 8.54");
+	d: "M16.19 8.54 8.85 15.89 1.5 8.54";
+}
+
+.in_animation
+{
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.section_title
+{
+	font-family: proxima_nova_bold;
+	font-size: 40px;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.safari_fix
+{
+	filter: none !important;
+}
+
+.safari_fix:hover
+{
+	filter: none !important;
+}
+
+
+
+/* le vrai properties  */
+@font-face
+{
+	font-family: raleway_bold;
+	src: url("../resources/fonts/raleway/Raleway-Bold.ttf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: raleway_semi_bold;
+	src: url("../resources/fonts/raleway/Raleway-SemiBold.ttf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: raleway_medium;
+	src: url("../resources/fonts/raleway/Raleway-Medium.ttf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: calibre_semi_bold;
+	src: url("../resources/fonts/calibre/CalibreSemibold.otf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: calibre_medium;
+	src: url("../resources/fonts/calibre/CalibreMedium.otf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: calibre_regular;
+	src: url("../resources/fonts/calibre/CalibreRegular.otf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: calibre_light;
+	src: url("../resources/fonts/calibre/CalibreLight.otf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: proxima_nova_bold;
+	src: url("../resources/fonts/proxima_nova/ProximaNovaBold.otf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: proxima_nova_semi_bold;
+	src: url("../resources/fonts/proxima_nova/ProximaNovaSemibold.otf");
+	font-display: swap;
+}
+
+body
+{
+	--light_blue: #56dcfc;
+	--blue: #197dff;
+	--fade_light_blue: rgba(86, 220, 252, 0.15);
+	--light_gray: #8ea9bf;
+	--white: #f6f9fc;
+	--fade_white: rgb(191, 182, 216);
+	--dark_blue: #101d30;
+	--fade_dark_blue: rgba(16, 29, 48, 0.9);
+	--black_title: #2b3954;
+	--black_text: #425466;
+	--dark_purple: rgb(41, 41, 85);
+	--purple: rgb(52, 52, 102);
 } */
